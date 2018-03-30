@@ -1,0 +1,10 @@
+#article {
+  margin-left: 70px;
+}
+.title {
+  font-size: 200%;
+}
+p {
+  text-align: justify;
+  font-size: 125%;
+}
