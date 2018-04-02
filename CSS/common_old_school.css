@@ -12,6 +12,10 @@ h1, h2, h3, a, li, p {
 #list {
   margin-left: 30px;
 }
+#change-theme {
+  float: right;
+  margin-right: 30px;
+}
 li {
   list-style-type: none;
   font-size: 200%;

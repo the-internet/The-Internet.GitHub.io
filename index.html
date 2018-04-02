@@ -4,7 +4,8 @@
   <title>The-Internet</title>
   <link rel="shortcut icon" href="images/The_Internet-logo640.png">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="CSS/common.css">
+  <link rel="stylesheet" type="text/css" id="theme" href="CSS/common_old_school.css">
+<!--  <link rel="stylesheet" type="text/css" id="theme" href="CSS/common_modern.css"> -->
 </head>
 
 <body>
@@ -13,6 +14,7 @@
     <h1>The-Internet</h1>
     <h2>Welcome to The-Internet, here you will find a simple to understand, detailed and sequetial articles on how The Internet works!</h2>
     <h3>By:<a href="https://GitHub.com/Sid-Sun" target="_blank"> @<u>Sid-Sun</u></a>
+    <a onclick="changeTheme()" id="change-theme">Change Theme</a></h3>
   </div>
 
     <hr>
@@ -21,50 +23,22 @@
       <li><a href="network.html"><u>Network:</u> A group or system of interconnected 'things'.</a></li>
     </ul>
 
-  <!--  <div id="articles">
-      <h2><a href="network.html">Network:-</a></h2>
-      <h2 class="description">A group or system of interconnected 'things'.</h2>
     </div>
-
-    <div id="articles">
-      <h2><a href="#">Data Packets:-</a></h2>
-      <h2 class="description">Definition.</h2>
-    </div>
-
-    <div id="articles">
-      <h2><a href="#">Network Protocols:-</a></h2>
-      <h2 class="description">Definition.</h2>
-    </div> -->
-
-    <!-- <div id="articles">
-      <form id="myform">
-        <input type="checkbox" name="checkfield" id="g01-01"  onchange="doalert(this)"/>
-      </form>
-    </div> -->
 
   </body>
 
-  <!-- <footer>
+  <footer>
     <script>
-    function doalert(checkboxElem) {
-      if (checkboxElem.checked) {
-        reStyle(2);
-      } else {
-        reStyle(0);
+    var themeName = "CSS/common_old_school";
+
+    function changeTheme(){
+      if (themeName == "CSS/common_old_school"){
+          themeName = "CSS/common_modern";
+        } else {
+          themeName = "CSS/common_old_school";
+        }
+      document.getElementById("theme").href = themeName + ".css";
       }
-    }
-
-    function noStyles() {
-        document.styleSheets[2].disabled = true;
-    }
-
-    function reStyle(n) {
-        noStyles()
-        document.styleSheets[n].disabled = false;
-    }
-
-    reStyle(0);
     </script>
-  </footer> -->
-
+  </footer>
 </html>
