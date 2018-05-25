@@ -30,8 +30,8 @@ h1 {
   font-size: 275%;
   text-decoration: underline;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #change-theme {
-        font-size: large;
+        font-size: xx-large;
     }
 }
