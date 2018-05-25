@@ -4,7 +4,8 @@
   <title>The-Internet</title>
   <link rel="shortcut icon" href="images/The_Internet-logo640.png">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" id="theme" href="CSS/common_old_school.css">
+  <link rel="stylesheet" type="text/css" id="theme" href="CSS/common_modern.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--  <link rel="stylesheet" type="text/css" id="theme" href="CSS/common_modern.css"> -->
 </head>
 
@@ -29,16 +30,16 @@
 
   <footer>
     <script>
-    var themeName = "CSS/common_old_school";
+        var themeName = "CSS/common_modern";
 
-    function changeTheme(){
-      if (themeName == "CSS/common_old_school"){
-          themeName = "CSS/common_modern";
-        } else {
-          themeName = "CSS/common_old_school";
+        function changeTheme(){
+            if (themeName == "CSS/common_modern"){
+                themeName = "CSS/common_old_school";
+            } else {
+                themeName = "CSS/common_modern";
+            }
+            document.getElementById("theme").href = themeName + ".css";
         }
-      document.getElementById("theme").href = themeName + ".css";
-      }
     </script>
   </footer>
 </html>
